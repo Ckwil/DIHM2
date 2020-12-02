@@ -1,0 +1,47 @@
+main{
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    
+}
+
+h4{
+    color: #ffffff;
+}
+
+.titulo-art{
+    background-color: #0E153B;
+}
+
+.tarjeta{
+    background-color: #f5f5f5;
+}
+
+.boton-targeta{
+    background-color: #0E153B;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.boton-targeta:hover{
+    background-color: #55EEF7;
+}
+
+.seleccion{
+    background-color: transparent;
+    font-weight: bold;
+    text-align-last: center;
+    border: 1px solid #000000;
+}
+
+
+.label-select{
+    font-weight: bold;
+}
+
+
+.imagen-material{
+    /* width: 250px;
+    height: 250px; */
+}

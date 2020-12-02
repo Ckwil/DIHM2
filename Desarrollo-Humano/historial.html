@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Humano</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/styles-materiales.css">
+    <link rel="stylesheet" href="css/header_footer_chido.css">
+    <link rel="stylesheet" href="css/styles_inicio.css">
+    <link rel="stylesheet" href="css/styles_historial.css">
+    <title>Desarrollo Estudiantil</title>
+</head>
+<body>
+    <header class="header">
+        <div class="cabecera">
+            <img class="logo-des" src="./img/logo3.png" alt="Logo Desarrollo">
+            <h1 class="title">Desarrollo Estudiantil</h1>
+            <img class="logo-uca" src="./img/Unicaribe_blanco.png" alt="Logo Unicaribe">
+        </div>
+        <div id="barra" class="sticky-top">
+            <nav class="navbar navbar-expand-md tema">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto" id="canastabar">
+                        <li class="nav-item dropdown">
+                            <img src="img/canasta.png" class="nav-link dropdown-toggle img-fluid" height="40px"
+                                width="40px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"></img>
+                            <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                <table id="lista-carrito" class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+
+                                <a href="#" id="vaciar-carrito" class="btn btn-block boton-vaciar">Vaciar Canasta</a>
+                                <a href="#" id="procesar-pedido" class="btn btn-block boton-procesar">Procesar Solicitud</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand enlace-header" href="./inicio.html">Inicio</a>
+                <a class="navbar-brand enlace-header" href="./materiales1.html">Solicitar Material</a>
+                <a class="navbar-brand enlace-header" href="./historial.html">Historial</a>
+                <a class="navbar-brand enlace-header" href="./cuenta.html">Cuenta</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color:black"></span>
+                </button>
+                
+            </nav>
+        </div>
+        <script src="js/sticky.js"></script>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <h5 class="d-flex justify-content-left mb-3">Consulte su historial de pedidos</h5>
+                        <div id="carrito" class="form-group table-responsive" >
+                            <table class="table" id="lista-compra" >
+                                <thead>
+                                    <tr>
+                                        <th class="header-table" scope="col">Registro</th>
+                                        <th class="header-table" scope="col">Imagen</th>
+                                        <th class="header-table" scope="col">Artículo</th>
+                                        <th class="header-table" scope="col">Cantidad</th>
+                                        <th class="header-table" scope="col">Fecha   Solicitud</th>
+                                        <th class="header-table" scope="col">Fecha Devolución</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody >
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer font-small blue footer ">
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="facebook" viewBox="0 0 512 512">
+                <title>facebook</title>
+                    <path style="fill:#1976D2;" d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h384c35.296,0,64-28.704,64-64V64 C512,28.704,483.296,0,448,0z"/>
+                    <path style="fill:#FAFAFA;" d="M432,256h-80v-64c0-17.664,14.336-16,32-16h32V96h-64l0,0c-53.024,0-96,42.976-96,96v64h-64v80h64 v176h96V336h48L432,256z"/>
+            </symbol>
+            <symbol id="gorjeo" viewBox="0 0 512 512">
+                <title>gorjeo</title>
+                <path style="fill:#03A9F4;" d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016 c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992 c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056 c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152 c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792 c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44 C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568 C480.224,136.96,497.728,118.496,512,97.248z"/>
+            </symbol>
+            <symbol id="marcador-de-posicion" viewBox="0 0 512 512">
+                <title>marcador-de-posicion</title>
+                <path style="fill:#FD003A;" d="M256,0C156.698,0,76,80.7,76,180c0,33.6,9.302,66.301,27.001,94.501l140.797,230.414 c2.402,3.9,6.002,6.301,10.203,6.901c5.698,0.899,12.001-1.5,15.3-7.2l141.2-232.516C427.299,244.501,436,212.401,436,180 C436,80.7,355.302,0,256,0z M256,270c-50.398,0-90-40.8-90-90c0-49.501,40.499-90,90-90s90,40.499,90,90 C346,228.9,306.999,270,256,270z"/>
+                <path style="fill:#E50027;" d="M256,0v90c49.501,0,90,40.499,90,90c0,48.9-39.001,90-90,90v241.991 c5.119,0.119,10.383-2.335,13.3-7.375L410.5,272.1c16.799-27.599,25.5-59.699,25.5-92.1C436,80.7,355.302,0,256,0z"/>
+            </symbol>
+        </svg>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            Universidad del caribe &copy 2020
+        </div>
+        <div class="footer-copyright text-center py-3">
+           <a class="enlace-footer"  href="http://www.unicaribe.mx/ubicacion" target="_blank">
+            <svg class="icons">
+                <use xlink:href="#marcador-de-posicion" />
+            </svg>
+            Ubicación
+            </a>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            <a href="https://www.facebook.com/ucaribeoficial/" target="_blank">
+                <svg class="icons">
+                    <use xlink:href="#facebook" />
+                </svg>
+            </a>
+            <a href="https://twitter.com/UcaribeOficial" target="_blank">
+                <svg class="icons">
+                    <use xlink:href="#gorjeo" />
+                </svg>
+            </a>
+            @UCARIBEOFICIAL
+         </div>
+         <div class="footer-copyright text-center py-3">
+            <a class="enlace-footer" href="http://www.unicaribe.mx/transparencia/aviso-privacidad" target="_blank">
+                Aviso de privacidad
+            </a>
+         </div>
+  
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/reload.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/coloca_cantcarr.js"></script>
+    <script src="js/pedido_nomateriales.js"></script>
+    <script src="js/crea_hist.js"></script>
+    <script src="./js/coloca-historial.js"></script>
+</body>
+</html>
