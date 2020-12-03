@@ -17,7 +17,7 @@ function cargarEventos() {
     /* compra.calcularTotal(); */
 
     //cuando se selecciona procesar Compra
-    /* procesarCompraBtn.addEventListener('click', compra.guardarHistorialLocalStorage()); */
+    /* procesarCompraBtn.addEventListener('click', compra.vaciarLocalStorage()); */
 
     /* carrito.addEventListener('change', (e) => { compra.obtenerEvento(e) });
     carrito.addEventListener('keyup', (e) => { compra.obtenerEvento(e) }); */

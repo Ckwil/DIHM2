@@ -2,16 +2,19 @@
 
 
 if(localStorage.getItem('historial') === null){
-    var srcimage = ["file:///C:/Users/jcke2/OneDrive/Documentos/Desarrollo-Humano/img/balon-futbol.png",
-                "file:///C:/Users/jcke2/OneDrive/Documentos/Desarrollo-Humano/img/balon-volibol.png",
-                "file:///C:/Users/jcke2/OneDrive/Documentos/Desarrollo-Humano/img/balon-tenis.png",
-                "file:///C:/Users/jcke2/OneDrive/Documentos/Desarrollo-Humano/img/aro.png",
-                "file:///C:/Users/jcke2/OneDrive/Documentos/Desarrollo-Humano/img/cono.png",
-                "file:///C:/Users/jcke2/OneDrive/Documentos/Desarrollo-Humano/img/raqueta-ping.png"]
-    var articulo = ["Balón Fútbol","Balón Volibol","Pelota Tenis","Aros","Conos","Raqueta Ping Pong"]
-    var cantidad = [4,5,2,3,5,5]
+    var srcimage = ["./img/balon-futbol.png",
+                "./img/balon-volibol.png",
+                "./img/balon-tenis.png",
+                "./img/aro.png",
+                "./img/cono.png",
+                "./img/raqueta-ping.png",
+                "./img/raqueta-ping.png",
+                "./img/aro.png",
+                "./img/cono.png"]
+    var articulo = ["Balón Fútbol","Balón Volibol","Pelota Tenis","Aros","Conos","Raqueta Ping Pong","Raqueta Ping Pong","Aros","Conos"]
+    var cantidad = [4,3,2,3,2,4,2,1,5]
     var fechaSol= Date().slice(11, 15)+"-"+10+"-"+Date().slice(8, 10);
-    var fechaDev = ["2020-10-11","2020-10-17","2020-10-18","2020-10-17","2020-10-15","2020-10-16"]
+    var fechaDev = ["2020-10-11","2020-10-17","2020-10-18","2020-10-17","2020-10-15","2020-10-16","2020-10-16","2020-10-16","2020-10-18"]
 
 
 

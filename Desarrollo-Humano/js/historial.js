@@ -23,7 +23,7 @@ function DatosHistorial(){
             localStorage.setItem('historial', JSON.stringify(articulos.concat(infoProducto)));
         }
     }
-    
+    localStorage.setItem('productos', JSON.stringify([]));
 }
 
 

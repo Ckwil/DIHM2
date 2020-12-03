@@ -213,8 +213,8 @@ class Carrito {
         if(this.obtenerProductosLocalStorage().length === 0){
             Swal.fire({
                 type: 'error',
-                title: 'Oops...',
-                text: 'El carrito está vacío, agrega algún producto',
+                title: 'Canasta vacía',
+                text: 'Añada artículos antes de procesar su solicitud',
                 showConfirmButton: false,
                 timer: 2000
             })
