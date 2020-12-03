@@ -35,7 +35,7 @@ class Carrito {
                 title: 'Oops...',
                 text: 'El producto ya está agregado',
                 showConfirmButton: false,
-                timer: 1000
+                timer: 5000
             })
         }
         else {
@@ -203,7 +203,7 @@ class Carrito {
     vaciarLocalStorage(){
         /* localStorage.clear(); */
         /* localStorage.removeItem("productos"); */
-        localStorage.clear();
+        localStorage.removeItem("productos");
     }
 
     //Procesar pedido
